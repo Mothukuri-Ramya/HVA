@@ -1,0 +1,54 @@
+body{
+    background-color:rgb(243, 235, 237);
+}
+table{
+    margin:110px 50px 30px 500px;
+    background-color: rgb(47, 70, 47);
+    
+}
+table,td {
+        border: 3px solid black;
+        text-align: center;
+     }
+td{
+    height:60px;
+    width:60px;
+    
+}
+#calc{
+ width: 250px;
+border: 3px solid black;
+border-radius: 3px;
+padding: 20px;
+margin: auto;
+}
+button{
+    font-size:20px;
+    height:40px;
+    width:40px;
+}
+
+
+@media only screen and (max-width: 600px) {
+table{
+    margin-left:160px;
+}
+}
+@media only screen and (max-width: 800px) {
+table{
+    margin-right:0px;
+    margin-left:180px;
+}
+}
+@media only screen and (max-width: 1000px) {
+table{
+    
+    margin-left:190px;
+}
+}
+@media only screen and (max-width: 1200px) {
+    table{
+        
+        margin-left:190px;
+    }
+    }
