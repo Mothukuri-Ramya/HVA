@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>CALCULATOR</title>
+</head>
+<body> 
+    <table>
+        <tr>
+            <td colspan="4"><input id = "calc" style=font-size:30px;></td>
+        </tr>
+        
+    <div class="btns">
+        <tr>
+        <td><button style="color:red" onclick="fun()">C</button></td>
+        <td><button style=font-size:25px; onclick="cancel()">⬅️</button></td>
+        <td><button onclick="Show('%')">%</button></td>
+        <td><button style=font-size:25px; onclick="Show('/')">÷</button></td>
+        
+    </tr>
+    <tr>
+        <td><button onclick="Show(7)">7</button></td>
+        <td><button onclick="Show(8)">8</button></td>
+        <td><button onclick="Show(9)">9</button></td>
+        <td><button onclick="Show('*')">X</button></td>
+        
+    </tr>
+    <tr>
+        <td><button onclick="Show(4)">4</button></td>
+        <td><button onclick="Show(5)">5</button></td>
+        <td><button onclick="Show(6)">6</button></td>
+        <td><button style=font-size:30px; onclick="Show('-')">-</button></td>
+        
+    </tr>
+    <tr>
+        <td><button id="btn" onclick="Show(1)">1</button></td>
+        <td><button onclick="Show(2)">2</button></td>
+        <td><button onclick="Show(3)">3</button></td>
+        <td><button onclick="Show('+')">+</button></td>
+        
+    </tr>
+    <tr>
+        <td><button onclick="Show('00')">00</button></td>
+        <td><button onclick="Show(0)">0</button></td>
+        <td><button onclick="Show('.')">.</button></td>
+        <td><button onclick="exe()">=</button></td>
+        
+    </tr>
+    
+    </div>
+</table>
+<script src="script.js"></script>
+</body>
+</html>
