@@ -1,0 +1,20 @@
+body{
+  background-image: url("/home/student/Downloads/todo.jpg");
+  
+}
+
+input[type="submit"]{
+  background-color:green;
+  padding:0px 20px 0px 20px;
+  font-size: ;
+}
+button{
+  background-color: red;
+}
+h2{
+  color:crimson;
+}
+.card-body{
+  padding:0px 5% 0px 40%;
+}
+
