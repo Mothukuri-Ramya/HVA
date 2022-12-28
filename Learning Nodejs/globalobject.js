@@ -5,7 +5,7 @@
  setInterval*/
  /*if we want to know current directory we have following command*/
  console.log(__dirname);
- /*for file name*/
+ /*for file name or for total path i.e on which file you are currently working on will be displayed*/
  console.log(__filename);
  /*setTimeout(function(){
     console.log('3 seconds have passed');
