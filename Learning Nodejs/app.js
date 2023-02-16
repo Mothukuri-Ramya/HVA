@@ -13,5 +13,5 @@ GET
 POST
 DELETE
 PUT
-by using express in node we can respond in each of the rquest easily
+by using express in node we can respond in each of the request easily
 */
