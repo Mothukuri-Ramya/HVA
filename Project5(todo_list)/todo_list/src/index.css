@@ -6,8 +6,9 @@ body{
 input[type="submit"]{
   background-color:green;
   padding:0px 20px 0px 20px;
-  font-size: ;
+  
 }
+
 button{
   background-color: red;
 }
@@ -18,3 +19,6 @@ h2{
   padding:0px 5% 0px 40%;
 }
 
+.del{
+  margin-right:10pc;
+}

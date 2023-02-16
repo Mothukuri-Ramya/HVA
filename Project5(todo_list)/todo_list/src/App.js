@@ -16,6 +16,7 @@ const App = () => {
         const newTodos = todos.filter((todo,index) => index !== indexValue);
         setTodos(newTodos);
     }
+   
 
     return (
         <div>
