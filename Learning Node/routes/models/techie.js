@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-
-  
+ 
 //create geolocation schema
 const GeoSchema = new Schema({
   type:{
@@ -12,7 +11,6 @@ const GeoSchema = new Schema({
     type:[Number],
     index:"2dsphere"
   }
-
 });
 
 //create techie schema&model
