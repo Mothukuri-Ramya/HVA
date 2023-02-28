@@ -15,13 +15,13 @@ router.get('/techies', function (req, res, next) {
             spherical: true
          } 
         }]).then(function (techies) {
-        res.send(techies);
+        res.json(techies);
     });
 });
 //add a new techie details to db
 router.post('/techies', function (req, res, next) {
     Techie.create(req.body).then(function (techie) {
-        res.send(techie);
+        res.json(techie);
     }).catch(next);
 
 });
@@ -29,7 +29,7 @@ router.post('/techies', function (req, res, next) {
 router.put('/techies/:id', function (req, res, next) {
     Techie.findByIdAndUpdate({ _id: req.params.id }, req.body).then(function () {
         Techie.findOne({ _id: req.params.id }).then(function (techie) {
-            res.send(techie);
+            res.json(techie);
         });
     });
 });
@@ -37,7 +37,7 @@ router.put('/techies/:id', function (req, res, next) {
 //delete techie details from the db
 router.delete('/techies/:id', function (req, res, next) {
     Techie.findByIdAndRemove({ _id: req.params.id }).then(function (techie) {
-        res.send(techie);
+        res.json(techie);
     });
 });
 
