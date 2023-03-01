@@ -28,5 +28,5 @@ const TechieSchema = new Schema({
    geometry:GeoSchema
  
 });
-const Techie = mongoose.model('techie',TechieSchema);
+const Techie = mongoose.model('Techie',TechieSchema);
 module.exports = Techie; 

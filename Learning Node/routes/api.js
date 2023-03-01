@@ -19,8 +19,11 @@ router.get('/techies', function (req, res, next) {
     });
 });
 //add a new techie details to db
+
+  
 router.post('/techies', function (req, res, next) {
-    Techie.create(req.body).then(function (techie) {
+    const {details}=JSON.parse(req.body);
+    Techie.create(details.body).then(function (techie) {
         res.json(techie);
     }).catch(next);
 
