@@ -15,6 +15,6 @@ app.use(express.static("./public"));
 todo_controller(app);
 
 //listening to port
-app.listen(3000);
-console.log('listening to port no 3000');
+app.listen(process.env.port);
+console.log('listening to port no');
 
