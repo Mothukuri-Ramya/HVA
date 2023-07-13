@@ -1,7 +1,9 @@
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+require('dotenv').config()
+
 //for connecting database
-mongoose.connect('mongodb+srv://Ramya:test1234@cluster0.wma2gny.mongodb.net/todo?retryWrites=true&w=majority');
+mongoose.connect(process.env.MONGODB_URL);
 
 //create schema
 var todoSchema = new mongoose.Schema({
