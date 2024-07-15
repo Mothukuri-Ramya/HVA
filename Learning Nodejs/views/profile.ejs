@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+    <style>
+        body{
+            background:green;
+            
+        }
+        h1,h2{
+            font-size:48px;
+            text-transform:uppercase;
+            letter-spacing:2px;
+            text-align:center;
+        }
+        p,li{
+            font-size:15px;
+            text-align:center;
+        }
+
+    </style>
+    </head>
+<body>
+    
+     <%- include('partial/nav.ejs') %>
+    <h1>Welcome to the profile of <%=person %></h1>
+    <p>Age:<%= data.age %></p>
+    <p>Job:<%= data.job %></p>
+    <h2>Hobbies</h2>
+    <ul>
+        <% data.hobbies.forEach(function(item){ %>
+            <li><%= item %></li>
+
+       <% }); %>
+    </ul>
+</body>
+</html>

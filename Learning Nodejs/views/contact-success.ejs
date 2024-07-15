@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background: green;
+            }
+            h1{
+                color:black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <%- include('partial/nav.ejs') %>
+        <h1>Contact Us</h1>
+        <p>contact support team for more information</p>
+        <p>Thanks for getting in touch</p>
+        <p>You contacted <%- data.who %> in the <%- data.department %> department</p>
+        <p>we will reply to you at <%- data.email %> </p>
+    </body>
+</html>
